@@ -1,3 +1,21 @@
+<?php
+$max_step = 6;
+
+function drawBranch($step=0)
+{
+	global $max_step;
+	
+	echo '<div class="branch">';
+	if($step<$max_step)
+	{
+		for($i=0;$i<4;++$i)
+		{
+			drawBranch($step+1);
+		}
+	}
+	echo '</div>';
+}
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -9,52 +27,7 @@
 	</head>
 	<body>
 		<div class="world">
-			<div class="branch">
-				<div class="branch">
-					<div class="branch">
-						<div class="branch">
-							<div class="branch"></div>
-							<div class="branch"></div>
-						</div>
-						<div class="branch">
-							<div class="branch"></div>
-							<div class="branch"></div>
-						</div>
-					</div>
-					<div class="branch">
-						<div class="branch">
-							<div class="branch"></div>
-							<div class="branch"></div>
-						</div>
-						<div class="branch">
-							<div class="branch"></div>
-							<div class="branch"></div>
-						</div>
-					</div>
-				</div>
-				<div class="branch">
-					<div class="branch">
-						<div class="branch">
-							<div class="branch"></div>
-							<div class="branch"></div>
-						</div>
-						<div class="branch">
-							<div class="branch"></div>
-							<div class="branch"></div>
-						</div>
-					</div>
-					<div class="branch">
-						<div class="branch">
-							<div class="branch"></div>
-							<div class="branch"></div>
-						</div>
-						<div class="branch">
-							<div class="branch"></div>
-							<div class="branch"></div>
-						</div>
-					</div>
-				</div>
-			</div>
+<?php drawBranch(); ?>
 		</div>
 	</body>
 </html>
