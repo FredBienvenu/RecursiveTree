@@ -1,0 +1,56 @@
+html, body
+{
+	width:100%;
+	height:100%;
+	
+	margin:0;
+	padding:0;
+}
+
+.world
+{
+	position:relative;
+	display:block;
+	
+	width:100%;
+	height:100%;
+	
+	background-color:rgb(211, 255, 235);
+}
+
+.branch
+{
+	position:absolute;
+	display:block;
+	
+	left:46%;
+	bottom:0%;
+	
+	height:50%;
+	width:8%;
+	
+	background-color:rgb(127, 80, 44);
+}
+
+.branch
+	>.branch
+{
+	bottom:95%;
+	
+	width:50%;
+	
+	transform-origin:bottom center;
+}
+
+.branch
+	>.branch:nth-child(1)
+{
+	left:0%;
+	transform:rotateZ(-45deg);
+}
+.branch
+	>.branch:nth-child(2)
+{
+	right:0%;
+	transform:rotateZ(45deg);
+}
