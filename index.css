@@ -30,6 +30,8 @@ html, body
 	width:8%;
 	
 	background-color:rgb(127, 80, 44);
+	border-left:1px black solid;
+	border-right:1px black solid;
 }
 
 .branch
