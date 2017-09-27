@@ -15,7 +15,14 @@ html, body
 	width:100%;
 	height:100%;
 	
-	background-color:rgb(211, 255, 235);
+	background:
+		linear-gradient(
+			0deg,
+			#FFFF64 0%,
+			#FDF936 1%,
+			#FF611A 20%,
+			#FE3420 100%
+		);
 }
 
 .branch
