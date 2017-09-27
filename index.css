@@ -1,7 +1,7 @@
 html, body
 {
-	width:100%;
-	height:100%;
+	width:800px;
+	height:600px;
 	
 	margin:0;
 	padding:0;
@@ -45,7 +45,6 @@ html, body
 	>.branch:nth-child(2)
 {
 	left:0%;
-	transform:rotateZ(-45deg);
 }
 /* left branches */
 /* right branches */
@@ -69,7 +68,19 @@ html, body
 	
 	width:50%;
 }
+
+.branch
+	>.branch:nth-child(1)
+{
+	transform:rotateZ(-45deg);
+}
+.branch
+	>.branch:nth-child(4)
+{
+	transform:rotateZ(45deg);
+}
 /* lowest branches */
+
 /* highest branches */
 .branch
 	>.branch:nth-child(2),
@@ -79,5 +90,16 @@ html, body
 	bottom:95%;
 	
 	width:40%;
+}
+
+.branch
+	>.branch:nth-child(2)
+{
+	transform:rotateZ(-35deg);
+}
+.branch
+	>.branch:nth-child(3)
+{
+	transform:rotateZ(35deg);
 }
 /* highest branches */
